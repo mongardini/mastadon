@@ -11,11 +11,12 @@
     },
     "LOCAL_DOMAIN": {
       "description": "The domain that your Mastodon instance will run on (this can be appname.herokuapp.com or a custom domain)",
+      "value": "staging-mongardini-web.herokuapp.com",
       "required": true
     },
     "LOCAL_HTTPS": {
       "description": "Will your domain support HTTPS? (Automatic for herokuapp, requires manual configuration for custom domains)",
-      "value": "false",
+      "value": "true",
       "required": true
     },
     "PAPERCLIP_SECRET": {
@@ -37,7 +38,7 @@
     },
     "S3_ENABLED": {
       "description": "Should Mastodon use Amazon S3 for storage? This is highly recommended, as Heroku does not have persistent file storage (files will be lost).",
-      "value": "true",
+      "value": "false",
       "required": false
     },
     "S3_BUCKET": {
@@ -58,14 +59,17 @@
     },
     "SMTP_SERVER": {
       "description": "Hostname for SMTP server, if you want to enable email",
+      "value": "smtp.gmail.com",
       "required": false
     },
     "SMTP_PORT": {
       "description": "Port for SMTP server",
+      "value": "587",
       "required": false
     },
     "SMTP_LOGIN": {
       "description": "Username for SMTP server",
+      "value": "mongardiniweb@gmail.com",
       "required": false
     },
     "SMTP_PASSWORD": {
@@ -74,10 +78,12 @@
     },
     "SMTP_DOMAIN": {
       "description": "Domain for SMTP server. Will default to instance domain if blank.",
+      "value": "gmail.com",
       "required": false
     },
     "SMTP_FROM_ADDRESS": {
       "description": "Address to send emails from",
+      "value": "mongardiniweb@gmail.com",
       "required": false
     },
     "SMTP_AUTH_METHOD": {
